@@ -69,7 +69,56 @@ require = (function (modules, cache, entry) {
   // Override the current require with this new one
   return newRequire;
 })({86:[function(require,module,exports) {
+var texts = [
+    'Full-Stack Software Engineer',
+    'Graphic Designer',
+    'Ui/Ux Designer',
+    'Frontend Developer'
+];
+var startingTime = null;
+var i = 0;
+var j = 0;
+var k = 0;
+var elmStage = document.getElementById('stage');
+var reverse = false;
 
+function animateText(stamp){
+
+    if (!startingTime){
+        startingTime = stamp;
+    }
+
+    var interval = stamp - startingTime;
+
+    if (interval >= 70 && reverse){
+        var text = texts[j];
+        elmStage.innerText = text.substring(0, k--);
+
+        if (k === 0){
+            j++;
+            reverse = false;
+
+            if (j >= texts.length) j = 0;
+        }
+    }
+
+    if (interval >= 150 && !reverse){
+        startingTime = stamp;
+
+        var text = texts[j];
+        elmStage.innerText = text.substring(0, i++);
+        if (i > (text.length + 10)) {
+            reverse = true;
+            i = 0;
+            k = text.length;
+        }
+    }
+
+    requestAnimationFrame(animateText);
+
+}
+
+requestAnimationFrame(animateText);
 },{}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
