@@ -68,12 +68,12 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({86:[function(require,module,exports) {
+})({27:[function(require,module,exports) {
 var texts = [
-    'Full-Stack Software Engineer',
-    'Graphic Designer',
-    'Ui/Ux Designer',
-    'Frontend Developer'
+    'FRONT-END DEVELOPER',
+    'BACK-END DEVELOPER',
+    'UI/UX DESIGNER',
+    'GRAPHIC DESIGNER'
 ];
 var startingTime = null;
 var i = 0;
@@ -137,7 +137,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:45287/');
+  var ws = new WebSocket('ws://localhost:43105/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -238,4 +238,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,86])
+},{}]},{},[0,27])

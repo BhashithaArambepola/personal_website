@@ -1,8 +1,8 @@
 var texts = [
-    'Full-Stack Software Engineer',
-    'Graphic Designer',
-    'Ui/Ux Designer',
-    'Frontend Developer'
+    'FRONT-END DEVELOPER',
+    'BACK-END DEVELOPER',
+    'UI/UX DESIGNER',
+    'GRAPHIC DESIGNER'
 ];
 var startingTime = null;
 var i = 0;
