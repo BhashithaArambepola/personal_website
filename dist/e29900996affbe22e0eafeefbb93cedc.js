@@ -68,7 +68,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({84:[function(require,module,exports) {
+})({58:[function(require,module,exports) {
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
@@ -132,7 +132,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:44791/');
+  var ws = new WebSocket('ws://localhost:45287/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -233,4 +233,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,84])
+},{}]},{},[0,58])
