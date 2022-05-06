@@ -1,0 +1,27 @@
+{
+  "name": "Personal-portfolio",
+  "version": "0.1.0",
+  "source": [
+    "src/index.html"
+  ],
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "parcel build",
+    "start": "parcel"
+  },
+  "author": "Bhashitha Arambepola <barambepola@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BhashithaArambepola/Personal_Portfolio/issues"
+  },
+  "homepage": "https://github.com/BhashithaArambepola/Personal_Portfolio",
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "parcel-bundler": "^1.3.1"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.30",
+    "admin-lte": "^3.2.0",
+    "sweetalert2": "^11.4.10"
+  }
+}
